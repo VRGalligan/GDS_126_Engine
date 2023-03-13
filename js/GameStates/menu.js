@@ -3,14 +3,14 @@ This file contains all of the code for the Main Menu
 ----------------------------------*/
 
 var startButton = new GameObject({width:200});
-//startButton.img.src="images/mrt.jpg"
+//startButton.img.src="images/Galligan_StartScreen.png"
 //startButton.width=200;
 startButton.hitBoxWidth=800
 console.log(startButton.collisionPoints.right)
 
 
 var menuBackground = new GameObject();
-menuBackground.img.src = "images/mrt.jpg"
+menuBackground.img.src = "images/Galligan_StartScreen.png"
 menuBackground.width=canvas.width
 menuBackground.height=canvas.height
 
@@ -26,12 +26,12 @@ gameStates[`menu`] =function(){
 		}
 
 		//Hover Effect Graffic
-		startButton.color = `yellow`
+		startButton.color = `darkgreen`
 	}
 	else
 	{
 		//Default Button Graphic
-		startButton.color = `red`
+		startButton.color = `green`
 	}
 	
 	menuBackground.drawStaticImage();

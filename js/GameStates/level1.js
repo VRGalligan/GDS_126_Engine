@@ -67,11 +67,11 @@ sky.img.src = `images/creepy_back.jpeg`
 
 //repeating background
 var rbg = new GameObject({x:level.x, y:level.y, width:1024, height:512})
-rbg.img.src=`images/hills.png`
+rbg.img.src=`images/galliganHills.png`
 
 //middleground
 var bg = new GameObject({x:level.x,y:level.y, width:canvas.width*4, height:canvas.height})
-bg.img.src=`images/bgfull.png`
+bg.img.src=`images/Galligan_BGfill.png`
 
 /*------------------vvBULLET STUFFvv----------------------*/
 
