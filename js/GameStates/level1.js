@@ -11,7 +11,7 @@ wiz.force=1
 
 //The ground
 var ground = new GameObject({width:canvas.width*10, x:canvas.width*10/2,height:64,y:canvas.height-32, color:"green"})
-ground.img.src=`images/ground.png`
+ground.img.src=`images/groundSquare.png`
 
 //A platform
 var plat = new GameObject({width:256, height:64,y:canvas.height-200, color:"green"})
@@ -67,7 +67,7 @@ sky.img.src = `images/creepy_back.jpeg`
 
 //repeating background
 var rbg = new GameObject({x:level.x, y:level.y, width:1024, height:512})
-rbg.img.src=`images/galliganHills.png`
+rbg.img.src=`images/finalHills.png`
 
 //middleground
 var bg = new GameObject({x:level.x,y:level.y, width:canvas.width*4, height:canvas.height})
@@ -84,7 +84,7 @@ var currentBullet = 0;
 for(let i=0; i<100; i++)
 {
 	bullets[i] = new GameObject({width:64, height:64})
-	//bullets[i].img.src="images/mrt.jpg"
+	bullets[i].img.src="images/galliganProjectile.png"
 	bullets[i].makeSprite(playerData)
 	bullets[i].y=-10000
 	bullets[i].changeState(`walk`)
