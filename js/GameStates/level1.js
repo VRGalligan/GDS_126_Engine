@@ -10,8 +10,8 @@ var wiz = new GameObject({width:128, height:128, spriteData:playerData}).makeSpr
 wiz.force=1
 
 //The ground
-var ground = new GameObject({width:canvas.width*10, x:canvas.width*10/2,height:64,y:canvas.height-32, color:"green"})
-ground.img.src=`images/groundSquare.png`
+var ground = new GameObject({width:canvas.width*10, x:canvas.width*10/2,height:128,y:canvas.height-32, color:"green"})
+ground.img.src=`images/greenBlock.png`
 
 //A platform
 var plat = new GameObject({width:256, height:64,y:canvas.height-200, color:"green"})
